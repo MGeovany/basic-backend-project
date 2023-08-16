@@ -2,12 +2,6 @@
 
 ## Pasos para Ejecutar la Aplicación Backend en MongoDB
 
-### 1. Clona el repositorio
-
-```sh-session
-git clone https://github.com/MGeovany/basic-backend-project/
-cd basic-backend-project
-```
 
 ### 2. Instala las dependencias
 ```sh-session
