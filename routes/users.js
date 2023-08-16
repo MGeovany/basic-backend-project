@@ -1,20 +1,17 @@
 const mongoose = require("mongoose");
+const uniqueValidator = require("mongoose-unique-validator");
+const express = require("express");
 const bcrypt = require("bcrypt");
 const bodyParser = require("body-parser");
 
-const uniqueValidator = require("mongoose-unique-validator");
-const express = require("express");
+const { MONGO_DB_CONNECTION } = require("../db");
 
 const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-const { MONGO_DB_CONNECTION } = require("../db");
 
 const router = express.Router();
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 
 mongoose
   .connect(MONGO_DB_CONNECTION)
@@ -82,6 +79,7 @@ router.post("/users", async (req, res) => {
     res.status(500).send("Error al encriptar la contraseña");
   }
 });
+
 // PUT - Actualizar un usuario por ID
 router.put("/users/:userId", async (req, res) => {
   try {
