@@ -4,22 +4,28 @@
 
 ### 1. Clona el repositorio
 
-`git clone <URL del repositorio>
+```sh-session
+git clone <URL del repositorio>
 cd basic-backend-project
-`
-### 2. Instala las dependencias
+```
 
-`npm install`
+### 2. Instala las dependencias
+```sh-session
+npm install
+```
 
 ### 3. Configura las variables de entorno
 
 Crea un archivo .env en la raíz del proyecto y configura las variables de entorno necesarias, como la cadena de conexión a la base de datos de MongoDB y otros valores sensibles.
 
-`MONGODB_URI=<cadena-de-conexión-a-tu-base-de-datos>`
+```sh-session
+MONGODB_URI=<cadena-de-conexión-a-tu-base-de-datos>
+```
 
 ### 4. Inicia el servidor
-
-`npm start`
+```sh-session
+npm start
+```
 
 ### 5. Prueba la aplicación
 
