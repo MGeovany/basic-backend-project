@@ -1,10 +1,11 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const { MONGO_DB_CONNECTION } = require("../db");
 
 const router = express.Router();
 
 mongoose
-  .connect("mongodb+srv")
+  .connect(MONGO_DB_CONNECTION)
   .catch((err) => console.error("Error de conexión a la base de datos:", err));
 
 const branchSchema = new mongoose.Schema(
@@ -49,6 +50,7 @@ router.post("/branches", (req, res) => {
   newBranch.save((err, branch) => {
     if (err) {
       res.status(500).send("Error en la base de datos (create)");
+      console.log(err);
     } else {
       res.status(201).json(branch);
     }

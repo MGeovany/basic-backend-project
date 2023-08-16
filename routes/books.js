@@ -1,11 +1,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const { MONGO_DB_CONNECTION } = require("../db");
 
 const router = express.Router();
 
 mongoose
-  .connect("mongodb+srv")
-  .catch((err) => console.error("Error de conexión a la base de datos:", err));
+  .connect(MONGO_DB_CONNECTION)
+  .catch((err) => console.error("Error de conexión a la base de dato:", err));
 
 const booksSchema = new mongoose.Schema(
   {
