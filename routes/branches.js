@@ -52,7 +52,6 @@ const ObjectId = mongoose.Types.ObjectId;
 // POST - Crear una nueva sucursal
 router.post("/branches", async (req, res) => {
   try {
-    // Verificar si el valor en "user" es un ObjectId válido
     if (!ObjectId.isValid(req.body.user)) {
       return res.status(400).send("El valor de 'user' no es válido");
     }
