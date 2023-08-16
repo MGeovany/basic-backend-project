@@ -5,7 +5,7 @@
 ### 1. Clona el repositorio
 
 ```sh-session
-git clone <URL del repositorio>
+git clone https://github.com/MGeovany/basic-backend-project/
 cd basic-backend-project
 ```
 
@@ -19,7 +19,8 @@ npm install
 Crea un archivo .env en la raíz del proyecto y configura las variables de entorno necesarias, como la cadena de conexión a la base de datos de MongoDB y otros valores sensibles.
 
 ```sh-session
-MONGODB_URI=<cadena-de-conexión-a-tu-base-de-datos>
+MONGODB_URI=mongodb+srv://tuUsuario:tuContrasena@mongocluster.tb6hfxj.mongodb.net/nombreBasedeDatos?retryWrites=true&w=majority
+
 ```
 
 ### 4. Inicia el servidor
