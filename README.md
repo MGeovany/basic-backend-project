@@ -34,3 +34,5 @@ Utiliza herramientas como Postman o cURL para enviar solicitudes HTTP a las ruta
 Recuerda adaptar las rutas y los nombres de las variables de acuerdo con tu implementación y requisitos específicos.
 
 ¡Listo! Ahora tienes la aplicación backend funcionando en tu entorno local.
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/20768145-75d605bc-a105-4c01-aea1-98f8a1031578?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D20768145-75d605bc-a105-4c01-aea1-98f8a1031578%26entityType%3Dcollection%26workspaceId%3D542a7199-4150-4dff-9503-f07a302e32a5)
